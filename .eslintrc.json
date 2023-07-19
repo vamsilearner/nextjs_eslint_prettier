@@ -1,0 +1,17 @@
+{
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript"],
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ],
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-vars": "warn",
+    "react/jsx-one-expression-per-line": "off"
+  }
+}
